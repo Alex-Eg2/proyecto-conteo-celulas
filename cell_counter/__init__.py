@@ -1,0 +1,1 @@
+from .step10_pipeline import procesar_imagen

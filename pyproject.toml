@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "proyecto-conteo-celulas"
+version = "0.1.0"
+description = "Libreria en Python para conteo automatico de celulas en imagenes microscopicas"
+authors = [
+    { name = "Equipo Proyecto 1" }
+]
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "opencv-python",
+    "numpy",
+    "matplotlib"
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["cell_counter*"]
